@@ -1,5 +1,15 @@
 <script setup>
 import {Link} from "@inertiajs/vue3";
+import {onMounted,onUpdated} from "vue";
+import hljs from 'highlight.js';
+
+onMounted(()=> {
+    hljs.highlightAll();
+})
+
+onUpdated(()=>{
+    hljs.highlightAll();
+})
 
 </script>
 
